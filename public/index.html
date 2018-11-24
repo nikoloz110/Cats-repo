@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <h1>Cats Library</h1>
+    <div class="get__cats crud">
+        <h3>Get Cats</h3>
+        <div class="wrapper">
+        <button onclick="getCats()" class="get__cats--request">Click</button>
+        <div class="get__cats--result"></div>
+    </div>
+    </div>
+    <div class="search__cat">
+        <h3>Search Cat</h3>
+        <div class="wrapper">
+        <input  id="search__cat--input" type="text" placeholder="Search cat by name...">
+        <button onclick="searchCatByName()" class="search__cat--request">Search</button>
+        <div class="search__cat--result"></div>
+    </div>
+    </div>
+    <div class="add__cat">
+        <h3>Add Cat</h3>
+        <div class="wrapper">
+        <input id="add__cat--input" type="text" placeholder="Add Cat...">
+        <button onclick="addCat()" class="add__cat--request">Add</button>
+    </div>
+    </div>
+    <div class="edit__cat">
+        <h3>Edit Cat</h3>
+        <div class="wrapper">
+        <input type="text" id="edit__cat--name" placeholder="Which cat to edit">
+        <input type="text" id="edit__cat--newName" placeholder="New Name">
+        <button onclick="editCat()" class="edit__cat--request">Edit</button>
+    </div>
+        <div class="edit__cat--result"></div>
+    
+    </div>
+
+    <div class="delete__cat">
+        <h3>Delete Cat</h3>
+        <div class="wrapper">
+        <input type="text" id="delete__cat--name" placeholder="Which cat to delete">
+        <button onclick="deleteCat()" class="edit__cat--request">Delete</button>
+    </div>
+        <div class="edit__cat--result"></div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
